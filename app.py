@@ -15,7 +15,7 @@ def load_available_combinations():
     return pd.read_csv(url)
 
 @st.cache_data
-def load_data_by_filename(filename):
+def load_data_by_filename(filename): 
     base = "https://raw.githubusercontent.com/TuckerArrants/rdr_orb/main"
     url = f"{base}/{filename}"
     try:
